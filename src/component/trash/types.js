@@ -1,0 +1,2 @@
+export const GET_MEETINGS = 'GET_MEETINGS';
+export const MEETING_ERROR = 'MEETING_ERROR';
