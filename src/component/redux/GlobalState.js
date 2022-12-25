@@ -14,7 +14,7 @@ export const GlobalProvider = ({ children }) => {
 
 const getData = async () => {
   try {
-    const res = await axios.get('https://6354ef52483f5d2df3a96755.mockapi.io/money');
+    const res = await axios.get('https://moneytracker-lumn.onrender.com/money');
 
     dispatch({
       type: "GET_MONEY",
@@ -36,7 +36,7 @@ const addMoney = async (data) => {
   };
 
   try {
-    const res = await axios.post('https://6354ef52483f5d2df3a96755.mockapi.io/money', data, add);
+    const res = await axios.post('https://moneytracker-lumn.onrender.com/money', data, add);
 
     dispatch({
       type: "ADD_MONEY",
@@ -56,7 +56,7 @@ const addMoney = async (data) => {
 
  const removeMoney = async (id) => {
       try {
-        await axios.delete(`https://6354ef52483f5d2df3a96755.mockapi.io/money/${id}`);
+        await axios.delete(`https://moneytracker-lumn.onrender.com//money/${id}`);
         dispatch({
           type: "REMOVE_MONEY",
           payload: id

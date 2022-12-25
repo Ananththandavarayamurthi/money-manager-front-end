@@ -15,13 +15,13 @@ function Addmoney() {
 
   const { values, handleSubmit, handleChange, } =
     useFormik({
-      initialValues: {
+      initialValues: [{
         Date: "",
         Description: "",
         Amount: "",
         Flow:"",
      
-      },
+      }],
       onSubmit: (values) => {
         console.log("form values", values);
         addMoney(values);
