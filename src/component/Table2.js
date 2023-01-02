@@ -34,6 +34,9 @@ function Table2() {
             {e.Description}
             </td>
             <td>
+                <span class="badge badge-dot me-4">
+                <i class={e.Flow==="true"?"bg-success":"bg-danger"}></i>
+            </span>
             {e.Flow==="true"?`income`:`expenses`}
             </td>
         
